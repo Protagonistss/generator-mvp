@@ -1,8 +1,21 @@
 import schema from './schema.json'
+import { ISchema } from './type'
 
-console.log(schema)
+const recursiveSchema = (schema: ISchema) => {
+  const { children, tagName } = schema
+  let nestContent = ''
+  if (children) {
+    children.forEach(item => {
+      nestContent += recursiveSchema(item)
+    })
+  }
+  return `<${tagName}>${nestContent}</${tagName}>`
+}
 
-const recursiveSchema = () => {}
 
-const toHtml = () => {}
+const main = () => {
+  const ret = recursiveSchema(schema)
+  console.log(ret)
+}
 
+main()
