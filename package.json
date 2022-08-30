@@ -1,17 +1,20 @@
 {
   "name": "mvp",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "lowcode",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "crator": "pnpm -r dev --filter @mvp/crator"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Protagonistss/generator-mvp.git"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "huangshan",
+    "email": "protagonisths@gmai.com",
+    "url": "https://github.com/Protagonistss"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Protagonistss/generator-mvp/issues"
